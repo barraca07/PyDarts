@@ -5,15 +5,10 @@ This repository contains a framework for modelling and simulating the sport of d
 ## Example Outputs
 
 ### A plot of the expected score calculated across the dartboard, with a marker showing the maximum, i.e. the location that the player should aim to maximise their long-term scoring average:
-
-![alt text](static\output_example.png)
+<img src="static/output_example.png" width=400>
 
 ### A plot of the computed Gaussian distribution of a player's throw calculated from a sample of points where their darts landed when aiming for the bullseye:
-
-![alt text](static\output_distribution.png)
+<img src="static/output_distribution.png" width=400>
 
 ### An animation showing how the optimal aiming location (i.e. the location that maximises the expected score) varies as the standard deviation of a player's throw increases (assuming the same standard deviation for x and y and no correlation):
-
-
-![alt text](static\animation_example.gif)
-
+<img src="static/animation_example.gif" width=400>
