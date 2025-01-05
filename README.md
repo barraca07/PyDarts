@@ -4,7 +4,7 @@ This repository contains a framework for modelling and simulating the sport of d
 
 ## Example Outputs
 
-### A plot of the expected score calculated across the dartboard, with a marker showing the maximum, i.e. the location that the player should aim to maximise their scoring long-term:
+### A plot of the expected score calculated across the dartboard, with a marker showing the maximum, i.e. the location that the player should aim to maximise their long-term scoring average:
 
 ![alt text](static\output_example.png)
 

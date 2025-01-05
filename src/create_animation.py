@@ -8,12 +8,12 @@ from Dartboard import Dartboard
 
 def create_animation(output_path, board):
     fps = 30
-    nSeconds = 15
+    nSeconds = 10
     std_max = 80
     std_min = 2
 
     # Set up the figure, the axis, and the plot element we want to animate
-    fig = plt.figure(figsize=(8,8), dpi=500)
+    fig = plt.figure(figsize=(8,8), dpi=120)
     ax = plt.subplot(111)
     divider = make_axes_locatable(ax)
     cax = divider.append_axes('right', size='5%', pad=0.05)

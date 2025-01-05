@@ -7,7 +7,6 @@ def generate_test_samples(mean_x, mean_y, std_x, std_y, corr, num_samples):
 
 def plot_accuracy_distribution(prob, outline):
     fig = plt.figure(figsize=(8.4, 6.8), dpi=120)
-    fig.patch.set_facecolor('#f7f6f4')
     ax = fig.add_subplot()
     ax.set_title('')
     plt.imshow(prob)

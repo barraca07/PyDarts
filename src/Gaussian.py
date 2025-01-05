@@ -67,5 +67,6 @@ if __name__ == "__main__":
 
     plot_accuracy_distribution(gaussian.pdf, board.outline)
     plt.scatter(MIDDLE, MIDDLE, c="r", marker="o", label="Target Location")
-    plt.legend()
+    plt.legend(loc="lower left")
+    plt.subplots_adjust(left=0.05, right=0.95, top=0.95, bottom=0.1)
     plt.show()
