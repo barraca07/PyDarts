@@ -1,0 +1,9 @@
+# define grid size
+RESOLUTION = 3*340+1
+
+# define the geometry of a dartboard
+OUTER_RADIUS = 170
+TREBLE_RADIUS = 107
+OUTER_BULL_RADIUS = 16
+BULL_RADIUS = 6.35
+DOUBLE_TREBLE_THICKNESS = 8
