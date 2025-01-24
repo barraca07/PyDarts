@@ -1,6 +1,6 @@
 # PyDarts: A Python Darts Simulation Framework
 
-This repository contains a framework for modelling and simulating the sport of darts using Python. It models the spatial distribution of a player's darts throw as a 2D Gaussian, from which allows for simulated player throws and the calculation of various metrics such as the expected score, probability of hitting a specific target and the optimal aiming location.
+This repository contains a Python framework for modelling and simulating the sport of darts. It models the spatial distribution of a player's darts throw as a 2D Gaussian, allowing for simulated player throws and calculating various metrics such as the expected score, probability of hitting a specific target and optimal aiming location.
 
 ## Example Outputs
 
