@@ -6,7 +6,7 @@ def generate_test_samples(mean_x, mean_y, std_x, std_y, corr, num_samples):
     return samples
 
 def plot_accuracy_distribution(prob, outline):
-    fig = plt.figure(figsize=(8.4, 6.8), dpi=120)
+    fig = plt.figure(figsize=(8.4, 6.8), dpi=100)
     ax = fig.add_subplot()
     ax.set_title('')
     plt.imshow(prob)
@@ -18,7 +18,7 @@ def plot_accuracy_distribution(prob, outline):
     plt.imshow(mask_outline, cmap="binary", interpolation="none", alpha=0.5)
     
 def plot_score_distribution(scores, outline):
-    fig = plt.figure(figsize=(8.4, 6.8), dpi=120)
+    fig = plt.figure(figsize=(8.4, 6.8), dpi=100)
     ax = fig.add_subplot()
     ax.set_title('')
     plt.imshow(scores)

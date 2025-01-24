@@ -57,7 +57,8 @@ if __name__ == "__main__":
 
     board = Dartboard()
 
-    test_samples = generate_test_samples(mean_x=8, mean_y=-4, std_x=40, std_y=30, corr=0.2, num_samples=1000)
+    test_samples = generate_test_samples(mean_x=10, mean_y=-5, std_x=30, std_y=50, corr=-0.2, num_samples=75)
+    print(test_samples)
     gaussian = Gaussian()
     mean, std, corr = gaussian.get_parameters_from_samples(test_samples)
     print(f"Estimated Mean: {mean}")
@@ -66,7 +67,8 @@ if __name__ == "__main__":
     gaussian.update_pdf(mean, std, corr)
 
     plot_accuracy_distribution(gaussian.pdf, board.outline)
-    plt.scatter(MIDDLE, MIDDLE, c="r", marker="o", label="Target Location")
+    plt.scatter(MIDDLE, MIDDLE, c="r", marker="x", label="Target Location")
+    plt.scatter(MIDDLE+test_samples[:, 0]*PX_PER_MM, MIDDLE-test_samples[:, 1]*PX_PER_MM, c="white", edgecolor='black', marker="o", label="Samples", s=10)
     plt.legend(loc="lower left")
     plt.subplots_adjust(left=0.05, right=0.95, top=0.95, bottom=0.1)
     plt.show()

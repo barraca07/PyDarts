@@ -173,7 +173,7 @@ if __name__ == "__main__":
     plot_score_distribution(board.generate_mask("20"), board.outline)
     scores, (i_max, ii_max) = board.get_all_expected_scores(player)
     plot_score_distribution(scores, board.outline)
-    plt.scatter(i_max, ii_max, c="r", marker="o", label="Best Aiming Location")
+    plt.scatter(i_max, ii_max, c="r", marker="o", label="Max Expected Score")
     plt.legend(loc="lower left")
     plt.subplots_adjust(left=0.05, right=0.95, top=0.95, bottom=0.1)
     plt.show()
